@@ -1,6 +1,6 @@
 import AssesmentPOM from "../POM/AssentmentPOM"
 
-describe('example to-do app', () => {
+describe('Prediktive Assestment', () => {
     beforeEach(() => {
         cy.visit('/')
     })
@@ -34,7 +34,7 @@ describe('example to-do app', () => {
         });
     })
 
-    it.only('Handles JSON response and prints RelatedTopics with Icon URL', () => {
+    it('Handles JSON response and prints RelatedTopics with Icon URL', () => {
       cy.request('https://api.duckduckgo.com/?q=android&format=json').then((response) => {
         expect(response.status).to.eq(200);
     
